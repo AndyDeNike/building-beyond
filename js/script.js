@@ -9,14 +9,14 @@
 //document.getElementById('Los Gatos Hills, CA').className += " active";
 
 var slideIndex = 1;
-showSlides(slideIndex);
+showSlides(slideIndex, 'mySlides');
 hideContent() 
 document.getElementById('Palo Alto, CA').style.display = "block";
 document.getElementById('Palo Alto, CA').className += " active";
 
 //PALOALTO
 document.getElementById('paloAlto').onclick = function(){
-  showSlides(slideIndex=1)
+  showSlides(slideIndex=1, 'mySlides')
   
   hideContent()
 
@@ -27,7 +27,7 @@ document.getElementById('paloAlto').onclick = function(){
 
 //LOSGATOS
 document.getElementById('losGatos').onclick = function(){
-  showSlides(slideIndex=4)
+  showSlides(slideIndex=1, 'mySlides2')
 
   hideContent()
 
@@ -59,18 +59,18 @@ function hideContent(){
 }
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n, slideType) {
+  showSlides(slideIndex += n, slideType);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(n, slideType) {
+  showSlides(slideIndex = n, slideType);
 }
 
-function showSlides(n) {
+function showSlides(n, slideType) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = document.getElementsByClassName(slideType);
   var dots = document.getElementsByClassName("demo");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}

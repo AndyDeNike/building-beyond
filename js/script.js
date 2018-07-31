@@ -21,8 +21,7 @@ document.getElementById('paloAlto').onclick = function(){
   hideContent()
 
   // Show the current tab, and add an "active" class to the link that opened the tab
-  document.getElementById('Palo Alto, CA').style.display = "block";
-  document.getElementById('Palo Alto, CA').className += " active";
+  currentTab('Palo Alto, CA')
 }
 
 //LOSGATOS
@@ -32,8 +31,7 @@ document.getElementById('losGatos').onclick = function(){
   hideContent()
 
   // Show the current tab, and add an "active" class to the link that opened the tab
-  document.getElementById('Los Gatos Hills, CA').style.display = "block";
-  document.getElementById('Los Gatos Hills, CA').className += " active";
+  currentTab('Los Gatos Hills, CA')
 }
 
 
@@ -56,6 +54,11 @@ function hideContent(){
   for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
+}
+
+function currentTab(cityName) {
+  document.getElementById(cityName).style.display = "block";
+  document.getElementById(cityName).className += " active";
 }
 
 // Next/previous controls

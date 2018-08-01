@@ -98,19 +98,21 @@ header nav ul li{
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+    background-color: #c2e0ce;
 }
 
+/* c2e0ce */
 /* Create an active/current "tab button" class */
 .tab button.active {
-    background-color: #ccc;
+    background-color: #c2e0ce;
 }
 
 /* Style the tab content */
 .tabcontent {
     float: left;
     padding: 0px 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #25673f;
+    /* #25673f */
     width: 70%;
     border-left: none;
     height: 100%;

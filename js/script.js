@@ -1,17 +1,17 @@
 //initial script run when document is accessed 
 
 window.onload=function(){
-  document.getElementById('paloAlto').click();
+  document.getElementById('paloAltoTab').click();
 };
 
 //PALOALTO
-document.getElementById('paloAlto').onclick = function(){
+document.getElementById('paloAltoTab').onclick = function(){
   currentSlide(slideIndex=1, 'paloAltoSlides', 'cursor1')
   
   hideContent()
 
   // Show the current tab, and add an "active" class to the link that opened the tab
-  currentTab('Palo Alto, CA')
+  currentTab('Palo Alto, CA', 'paloAltoTab')
 
   document.getElementById('pa1thumb').onclick = function(){
     currentSlide(1, 'paloAltoSlides', 'cursor1')
@@ -33,13 +33,13 @@ document.getElementById('paloAlto').onclick = function(){
 }
 
 //LOSGATOS
-document.getElementById('losGatos').onclick = function(){
+document.getElementById('losGatosTab').onclick = function(){
   currentSlide(slideIndex=1, 'losGatosSlides', 'cursor2')
 
   hideContent()
 
   // Show the current tab, and add an "active" class to the link that opened the tab
-  currentTab('Los Gatos Hills, CA')
+  currentTab('Los Gatos Hills, CA', 'losGatosTab')
 
   document.getElementById('lg1thumb').onclick = function(){
     currentSlide(1, 'losGatosSlides', 'cursor2')
@@ -67,7 +67,7 @@ document.getElementById('losGatos').onclick = function(){
 }
 
 
-
+//-------------------------FUNCTIONALITY-------------------------
 
 
 function hideContent(){
@@ -87,9 +87,12 @@ function hideContent(){
   }
 }
 
-function currentTab(cityName) {
+function currentTab(cityName, tabName) {
   document.getElementById(cityName).style.display = "block";
-  document.getElementById(cityName).className += " active";
+  //document.getElementById(cityName).className += " active";
+
+  // Sets clicked tab to active allowing for css background active color
+  document.getElementById(tabName).className += " active";
 }
 
 // Next/previous controls

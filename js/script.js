@@ -14,20 +14,20 @@ document.getElementById('paloAltoTab').onclick = function(){
   currentTab('Palo Alto, CA', 'paloAltoTab')
 
   document.getElementById('pa1thumb').onclick = function(){
-    currentSlide(1, 'paloAltoSlides', 'cursor1')
+    currentSlide(1, 'paloAltoSlides', 'cursor3')
   }
   document.getElementById('pa2thumb').onclick = function(){
-    currentSlide(2, 'paloAltoSlides', 'cursor1')
+    currentSlide(2, 'paloAltoSlides', 'cursor3')
   }
   document.getElementById('pa3thumb').onclick = function(){
-    currentSlide(3, 'paloAltoSlides', 'cursor1')
+    currentSlide(3, 'paloAltoSlides', 'cursor3')
   }
 
   document.getElementById('paPrev').onclick = function(){
-    plusSlides(-1, 'paloAltoSlides', 'cursor1')
+    plusSlides(-1, 'paloAltoSlides', 'cursor3')
   }
   document.getElementById('paNext').onclick = function(){
-    plusSlides(1, 'paloAltoSlides', 'cursor1')
+    plusSlides(1, 'paloAltoSlides', 'cursor3')
   }
 
 }
@@ -64,6 +64,34 @@ document.getElementById('losGatosTab').onclick = function(){
       //currentSlide(i+1, 'LGSlides', 'demo cursor2')
     //}
   //}
+}
+
+//PALOALTO2
+document.getElementById('paloAlto2Tab').onclick = function(){
+  currentSlide(slideIndex=1, 'paloAlto2Slides', 'cursor3')
+  
+  hideContent()
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  currentTab('Palo Alto, CA 2', 'paloAlto2Tab')
+
+  document.getElementById('pa2thumb3').onclick = function(){
+    currentSlide(1, 'paloAlto2Slides', 'cursor3')
+  }
+  document.getElementById('pa2thumb2').onclick = function(){
+    currentSlide(2, 'paloAlto2Slides', 'cursor3')
+  }
+  document.getElementById('pa2thumb3').onclick = function(){
+    currentSlide(3, 'paloAlto2Slides', 'cursor3')
+  }
+
+  document.getElementById('pa2Prev').onclick = function(){
+    plusSlides(-1, 'paloAlto2Slides', 'cursor3')
+  }
+  document.getElementById('pa2Next').onclick = function(){
+    plusSlides(1, 'paloAlto2Slides', 'cursor3')
+  }
+
 }
 
 

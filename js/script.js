@@ -14,20 +14,20 @@ document.getElementById('paloAltoTab').onclick = function(){
   currentTab('Palo Alto, CA', 'paloAltoTab')
 
   document.getElementById('pa1thumb').onclick = function(){
-    currentSlide(1, 'paloAltoSlides', 'cursor3')
+    currentSlide(1, 'paloAltoSlides', 'cursor1')
   }
   document.getElementById('pa2thumb').onclick = function(){
-    currentSlide(2, 'paloAltoSlides', 'cursor3')
+    currentSlide(2, 'paloAltoSlides', 'cursor1')
   }
   document.getElementById('pa3thumb').onclick = function(){
-    currentSlide(3, 'paloAltoSlides', 'cursor3')
+    currentSlide(3, 'paloAltoSlides', 'cursor1')
   }
 
   document.getElementById('paPrev').onclick = function(){
-    plusSlides(-1, 'paloAltoSlides', 'cursor3')
+    plusSlides(-1, 'paloAltoSlides', 'cursor1')
   }
   document.getElementById('paNext').onclick = function(){
-    plusSlides(1, 'paloAltoSlides', 'cursor3')
+    plusSlides(1, 'paloAltoSlides', 'cursor1')
   }
 
 }

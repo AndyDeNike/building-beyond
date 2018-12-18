@@ -94,6 +94,39 @@ document.getElementById('paloAlto2Tab').onclick = function(){
 
 }
 
+//SANFRANCISCO
+document.getElementById('sanFranciscoTab').onclick = function(){
+  currentSlide(slideIndex=1, 'sanFranciscoSlides', 'cursor4')
+  
+  hideContent()
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  currentTab('San Francisco, CA', 'sanFranciscoTab')
+
+  document.getElementById('sfthumb1').onclick = function(){
+    currentSlide(1, 'sanFranciscoSlides', 'cursor4')
+  }
+  document.getElementById('sfthumb2').onclick = function(){
+    currentSlide(2, 'sanFranciscoSlides', 'cursor4')
+  }
+  document.getElementById('sfthumb3').onclick = function(){
+    currentSlide(3, 'sanFranciscoSlides', 'cursor4')
+  }
+  document.getElementById('sfthumb4').onclick = function(){
+    currentSlide(4, 'sanFranciscoSlides', 'cursor4')
+  }
+  document.getElementById('sfthumb5').onclick = function(){
+    currentSlide(5, 'sanFranciscoSlides', 'cursor4')
+  }
+
+  document.getElementById('sfPrev').onclick = function(){
+    plusSlides(-1, 'sanFranciscoSlides', 'cursor4')
+  }
+  document.getElementById('sfNext').onclick = function(){
+    plusSlides(1, 'sanFranciscoSlides', 'cursor4')
+  }
+
+}
 
 //-------------------------FUNCTIONALITY-------------------------
 

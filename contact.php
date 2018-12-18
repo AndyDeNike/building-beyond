@@ -26,7 +26,7 @@ $mail->Username = 'denikeandrew@gmail.com';
 		$mail->SMTPAuth = true;
 		$mail->Username = 'denikeandrew@gmail.com';
 		$mail->Password = 'hclxvtncuxhudtil';
-		$mail->SMTPSecure = 'ssl'; 
+		$mail->SMTPSecure = 'tsl'; 
 		$mail->Port = 465;
 
 		$mail->Subject = "Contact request from Buildingandbeyond.com";

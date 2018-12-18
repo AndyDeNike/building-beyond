@@ -84,7 +84,7 @@
 
 			<div id="emailform">
 				<h1>Email Us</h1>
-				<form method="post" action="contact.php">
+				<form method="post" action="https://cryptic-harbor-13456.herokuapp.com/contact.php">
 					<div>
 						<label>Name</label><br>
 						<input name="name" type="text" placeholder="Name">

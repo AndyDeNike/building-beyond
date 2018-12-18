@@ -1,4 +1,7 @@
 <?php
+	ini_set('display_errors',1); 
+	error_reporting(E_ALL);
+
 	$msg = "";
 	use PHPMailer\PHPMailer\PHPMailer;
 	include_once "PHPMailer/PHPMailer.php";

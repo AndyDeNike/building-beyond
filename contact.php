@@ -34,7 +34,6 @@
 		"<br><br>" . 'Message: ' . $message;
 
 		if ($mail->send())
-			header('Location: https://cryptic-harbor-13456.herokuapp.com/contact.php');
 			$msg = "Your email has been sent, thank you!";
 
 		else 
@@ -86,7 +85,7 @@
 
 			<div id="emailform">
 				<h1>Email Us</h1>
-				<form method="post" action="">
+				<form method="post" action="contact.php">
 					<div>
 						<label>Name</label><br>
 						<input name="name" type="text" placeholder="Name">

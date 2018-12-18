@@ -22,7 +22,7 @@
 		$mail->Username = 'denikeandrew@gmail.com';
 		$mail->Password = 'hclxvtncuxhudtil';
 		$mail->SMTPSecure = 'tls'; 
-		$mail->Port = 465;
+		$mail->Port = 587;
 
 		$mail->Subject = "Contact request from Buildingandbeyond.com";
 		$mail->isHTML(true);

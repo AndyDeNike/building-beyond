@@ -128,6 +128,43 @@ document.getElementById('sanFranciscoTab').onclick = function(){
 
 }
 
+//WOODSIDE
+document.getElementById('woodsideTab').onclick = function(){
+  currentSlide(slideIndex=1, 'woodsideSlides', 'cursor5')
+  
+  hideContent()
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  currentTab('Woodside, CA', 'woodsideTab')
+
+  document.getElementById('wsthumb1').onclick = function(){
+    currentSlide(1, 'woodsideSlides', 'cursor5')
+  }
+  document.getElementById('wsthumb2').onclick = function(){
+    currentSlide(2, 'woodsideSlides', 'cursor5')
+  }
+  document.getElementById('wsthumb3').onclick = function(){
+    currentSlide(3, 'woodsideSlides', 'cursor5')
+  }
+  document.getElementById('wsthumb4').onclick = function(){
+    currentSlide(4, 'woodsideSlides', 'cursor5')
+  }
+  document.getElementById('wsthumb5').onclick = function(){
+    currentSlide(5, 'woodsideSlides', 'cursor5')
+  }
+  document.getElementById('wsthumb5').onclick = function(){
+    currentSlide(6, 'woodsideSlides', 'cursor5')
+  }
+
+  document.getElementById('wsPrev').onclick = function(){
+    plusSlides(-1, 'woodsideSlides', 'cursor5')
+  }
+  document.getElementById('wsNext').onclick = function(){
+    plusSlides(1, 'woodsideSlides', 'cursor5')
+  }
+
+}
+
 //-------------------------FUNCTIONALITY-------------------------
 
 

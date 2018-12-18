@@ -19,7 +19,7 @@
 
 
 		$mail->IsSMTP();
-		$mail->SMTPDebug = 1;
+		$mail->SMTPDebug = 2;  //1- errors/message 2- messages only
 		$mail->Host = 'smtp.gmail.com';
 		$mail->SMTPAuth = true;
 		$mail->Username = 'denikeandrew@gmail.com';

@@ -34,6 +34,7 @@
 		"<br><br>" . 'Message: ' . $message;
 
 		if ($mail->send())
+			header('Location: https://cryptic-harbor-13456.herokuapp.com/contact.php');
 			$msg = "Your email has been sent, thank you!";
 
 		else 

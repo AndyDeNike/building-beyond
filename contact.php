@@ -1,8 +1,3 @@
-$mail->Username = 'denikeandrew@gmail.com';
-		$mail->Password = 'hclxvtncuxhudtil';
-		$mail->addAddress('denikeandrew@gmail.com');
-
-
 <?php
 	$msg = "";
 	use PHPMailer\PHPMailer\PHPMailer;
@@ -37,7 +32,6 @@ $mail->Username = 'denikeandrew@gmail.com';
 		"<br><br>" . 'Email: ' . $email . 
 		"<br><br>" . 'Phone: ' . $phone .
 		"<br><br>" . 'Message: ' . $message;
-		
 
 		if ($mail->send())
 			$msg = "Your email has been sent, thank you!";

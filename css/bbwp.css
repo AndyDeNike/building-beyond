@@ -79,7 +79,7 @@ header nav ul li{
     float: left;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    width: 30%;
+    width: 30%;	
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -216,3 +216,26 @@ footer {
 	text-align: center;
 
 }
+
+
+.row{
+	margin-top: 20px;	
+	margin-bottom: 134px;
+}
+
+.box{
+	width: 20%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#fmContent{
+	text-align: center;
+}
+
+#fmContent .box img{
+	/*width: 90%;*/
+	width: 93%;
+}
+
+

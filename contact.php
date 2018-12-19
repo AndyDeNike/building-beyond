@@ -59,10 +59,10 @@
 <body>
 
 	<header>
-		<img id="logo" src="images/BB White Logo.jpg">
+		<a href="home.html"><img id="logo" src="images/BB White Logo.jpg"></a>
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="home.html">Home</a></li>
 				<li><a href="portfolio.html">Portfolio</a></li>
 				<li class="current"><a href="contact.php">Contact</a></li>
 			</ul>

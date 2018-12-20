@@ -238,4 +238,13 @@ footer {
 	width: 93%;
 }
 
+@media(max-width: 768px){
+	#galleryPortfolio{
+		width:100%;
+	}
+	header nav a{
+		font-size: 13px;
+	}
+
+}
 

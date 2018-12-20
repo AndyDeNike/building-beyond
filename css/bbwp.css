@@ -57,8 +57,8 @@ header nav ul li{
 	margin-right: auto;
 	display: block;
 	width: 35%;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 
@@ -230,6 +230,7 @@ footer {
 .indexRow{
 	margin-top: 20px;	
 	margin-bottom: 134px;
+	padding-top: 15px;
 }
 
 .box{
@@ -254,11 +255,14 @@ footer {
 	#galleryPortfolio{
 		width: 100%;
 	}
-	header nav a{
-		font-size: 13px;
+	header #logo{
+	width: 31%;
 	}
 	#longlogocontainer #logolong{
 	width: 100%;
+	}
+	header nav a{
+		font-size: 13px;
 	}
 	.box{
 	width: 24%;

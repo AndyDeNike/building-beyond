@@ -239,8 +239,11 @@ footer {
 }
 
 @media(max-width: 768px){
+	#profileInfo{
+		width: 75%;
+	}
 	#galleryPortfolio{
-		width:100%;
+		width: 100%;
 	}
 	header nav a{
 		font-size: 13px;

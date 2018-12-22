@@ -165,6 +165,31 @@ document.getElementById('woodsideTab').onclick = function(){
 
 }
 
+//SARATOGA
+document.getElementById('saratogaTab').onclick = function(){
+  currentSlide(slideIndex=1, 'saratogaSlides', 'cursor6')
+  
+  hideContent()
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  currentTab('Saratoga, CA', 'saratogaTab')
+
+  document.getElementById('wsthumb1').onclick = function(){
+    currentSlide(1, 'saratogaSlides', 'cursor6')
+  }
+  document.getElementById('wsthumb2').onclick = function(){
+    currentSlide(2, 'saratogaSlides', 'cursor6')
+  }
+
+  document.getElementById('sPrev').onclick = function(){
+    plusSlides(-1, 'saratogaSlides', 'cursor6')
+  }
+  document.getElementById('sNext').onclick = function(){
+    plusSlides(1, 'saratogaSlides', 'cursor6')
+  }
+
+}
+
 //-------------------------FUNCTIONALITY-------------------------
 
 

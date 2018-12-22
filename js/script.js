@@ -174,10 +174,10 @@ document.getElementById('saratogaTab').onclick = function(){
   // Show the current tab, and add an "active" class to the link that opened the tab
   currentTab('Saratoga, CA', 'saratogaTab')
 
-  document.getElementById('wsthumb1').onclick = function(){
+  document.getElementById('sthumb1').onclick = function(){
     currentSlide(1, 'saratogaSlides', 'cursor6')
   }
-  document.getElementById('wsthumb2').onclick = function(){
+  document.getElementById('sthumb2').onclick = function(){
     currentSlide(2, 'saratogaSlides', 'cursor6')
   }
 

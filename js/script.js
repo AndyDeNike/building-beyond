@@ -190,6 +190,34 @@ document.getElementById('saratogaTab').onclick = function(){
 
 }
 
+//WOODSIDE2
+document.getElementById('woodside2Tab').onclick = function(){
+  currentSlide(slideIndex=1, 'woodside2Slides', 'cursor7')
+  
+  hideContent()
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  currentTab('Woodside2, CA', 'woodside2Tab')
+
+  document.getElementById('ws2thumb1').onclick = function(){
+    currentSlide(1, 'woodside2Slides', 'cursor7')
+  }
+  document.getElementById('ws2thumb2').onclick = function(){
+    currentSlide(2, 'woodside2Slides', 'cursor7')
+  }
+  document.getElementById('ws2thumb3').onclick = function(){
+    currentSlide(3, 'woodside2Slides', 'cursor7')
+  }
+
+  document.getElementById('ws2Prev').onclick = function(){
+    plusSlides(-1, 'woodside2Slides', 'cursor7')
+  }
+  document.getElementById('ws2Next').onclick = function(){
+    plusSlides(1, 'woodside2Slides', 'cursor7')
+  }
+
+}
+
 //-------------------------FUNCTIONALITY-------------------------
 
 

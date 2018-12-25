@@ -218,6 +218,37 @@ document.getElementById('woodside2Tab').onclick = function(){
 
 }
 
+//CARMEL
+document.getElementById('carmelTab').onclick = function(){
+  currentSlide(slideIndex=1, 'carmelSlides', 'cursor8')
+  
+  hideContent()
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  currentTab('Carmel, CA', 'carmelTab')
+
+  document.getElementById('chthumb1').onclick = function(){
+    currentSlide(1, 'carmelSlides', 'cursor8')
+  }
+  document.getElementById('chthumb2').onclick = function(){
+    currentSlide(2, 'carmelSlides', 'cursor8')
+  }
+  document.getElementById('chthumb3').onclick = function(){
+    currentSlide(3, 'carmelSlides', 'cursor8')
+  }
+  document.getElementById('chthumb4').onclick = function(){
+    currentSlide(4, 'carmelSlides', 'cursor8')
+  }
+
+  document.getElementById('chPrev').onclick = function(){
+    plusSlides(-1, 'carmelSlides', 'cursor8')
+  }
+  document.getElementById('chNext').onclick = function(){
+    plusSlides(1, 'carmelSlides', 'cursor8')
+  }
+
+}
+
 //-------------------------FUNCTIONALITY-------------------------
 
 

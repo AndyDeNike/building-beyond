@@ -249,6 +249,34 @@ document.getElementById('carmelTab').onclick = function(){
 
 }
 
+//MENLO PARK
+document.getElementById('menloParkTab').onclick = function(){
+  currentSlide(slideIndex=1, 'menloParkSlides', 'cursor9')
+  
+  hideContent()
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  currentTab('Menlo Park, CA', 'menloParkTab')
+
+  document.getElementById('mpthumb1').onclick = function(){
+    currentSlide(1, 'menloParkSlides', 'cursor9')
+  }
+  document.getElementById('mpthumb2').onclick = function(){
+    currentSlide(2, 'menloParkSlides', 'cursor9')
+  }
+  document.getElementById('mpthumb3').onclick = function(){
+    currentSlide(3, 'menloParkSlides', 'cursor9')
+  }
+
+  document.getElementById('mpPrev').onclick = function(){
+    plusSlides(-1, 'menloParkSlides', 'cursor9')
+  }
+  document.getElementById('mpNext').onclick = function(){
+    plusSlides(1, 'menloParkSlides', 'cursor9')
+  }
+
+}
+
 //-------------------------FUNCTIONALITY-------------------------
 
 

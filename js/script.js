@@ -277,6 +277,31 @@ document.getElementById('menloParkTab').onclick = function(){
 
 }
 
+//WOODSIDE3
+document.getElementById('woodside3Tab').onclick = function(){
+  currentSlide(slideIndex=1, 'woodside3Slides', 'cursor10')
+  
+  hideContent()
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  currentTab('Woodside3, CA', 'woodside3Tab')
+
+  document.getElementById('ws3thumb1').onclick = function(){
+    currentSlide(1, 'woodside3Slides', 'cursor10')
+  }
+  document.getElementById('ws3thumb2').onclick = function(){
+    currentSlide(2, 'woodside3Slides', 'cursor10')
+  }
+
+  document.getElementById('ws3Prev').onclick = function(){
+    plusSlides(-1, 'woodside3Slides', 'cursor10')
+  }
+  document.getElementById('ws3Next').onclick = function(){
+    plusSlides(1, 'woodside3Slides', 'cursor10')
+  }
+
+}
+
 //-------------------------FUNCTIONALITY-------------------------
 
 

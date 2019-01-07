@@ -22,6 +22,20 @@ document.getElementById('paloAltoTab').onclick = function(){
   document.getElementById('pa3thumb').onclick = function(){
     currentSlide(3, 'paloAltoSlides', 'cursor1')
   }
+  document.getElementById('pa4thumb').onclick = function(){
+    currentSlide(4, 'paloAltoSlides', 'cursor1')
+  }
+  document.getElementById('pa5thumb').onclick = function(){
+    currentSlide(5, 'paloAltoSlides', 'cursor1')
+  }
+  document.getElementById('pa6thumb').onclick = function(){
+    currentSlide(6, 'paloAltoSlides', 'cursor1')
+  }
+  /*
+  document.getElementById('pa7thumb').onclick = function(){
+    currentSlide(7, 'paloAltoSlides', 'cursor1')
+  }
+  */
 
   document.getElementById('paPrev').onclick = function(){
     plusSlides(-1, 'paloAltoSlides', 'cursor1')

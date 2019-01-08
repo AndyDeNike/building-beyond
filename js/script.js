@@ -64,6 +64,15 @@ document.getElementById('losGatosTab').onclick = function(){
   document.getElementById('lg3thumb').onclick = function(){
     currentSlide(3, 'losGatosSlides', 'cursor2')
   }
+  document.getElementById('lg4thumb').onclick = function(){
+    currentSlide(4, 'losGatosSlides', 'cursor2')
+  }
+  document.getElementById('lg5thumb').onclick = function(){
+    currentSlide(5, 'losGatosSlides', 'cursor2')
+  }
+  document.getElementById('lg6thumb').onclick = function(){
+    currentSlide(6, 'losGatosSlides', 'cursor2')
+  }
 
   document.getElementById('lgPrev').onclick = function(){
     plusSlides(-1, 'losGatosSlides', 'cursor2')

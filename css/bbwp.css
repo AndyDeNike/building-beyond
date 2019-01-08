@@ -87,7 +87,7 @@ header nav ul li{
  /* Style the tab */
 
  #galleryPortfolio {
- 	width: 50%;
+ 	width: 45%; /*potentially 50*/
  	margin: auto;
  	overflow: hidden;
  }

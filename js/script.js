@@ -98,7 +98,7 @@ document.getElementById('paloAlto2Tab').onclick = function(){
   // Show the current tab, and add an "active" class to the link that opened the tab
   currentTab('Palo Alto, CA 2', 'paloAlto2Tab')
 
-  document.getElementById('pa2thumb3').onclick = function(){
+  document.getElementById('pa2thumb1').onclick = function(){
     currentSlide(1, 'paloAlto2Slides', 'cursor3')
   }
   document.getElementById('pa2thumb2').onclick = function(){
@@ -106,6 +106,15 @@ document.getElementById('paloAlto2Tab').onclick = function(){
   }
   document.getElementById('pa2thumb3').onclick = function(){
     currentSlide(3, 'paloAlto2Slides', 'cursor3')
+  }
+  document.getElementById('pa2thumb4').onclick = function(){
+    currentSlide(4, 'paloAlto2Slides', 'cursor3')
+  }
+  document.getElementById('pa2thumb5').onclick = function(){
+    currentSlide(5, 'paloAlto2Slides', 'cursor3')
+  }
+  document.getElementById('pa2thumb6').onclick = function(){
+    currentSlide(6, 'paloAlto2Slides', 'cursor3')
   }
 
   document.getElementById('pa2Prev').onclick = function(){

@@ -150,6 +150,9 @@ document.getElementById('sanFranciscoTab').onclick = function(){
   document.getElementById('sfthumb5').onclick = function(){
     currentSlide(5, 'sanFranciscoSlides', 'cursor4')
   }
+  document.getElementById('sfthumb6').onclick = function(){
+    currentSlide(6, 'sanFranciscoSlides', 'cursor4')
+  }
 
   document.getElementById('sfPrev').onclick = function(){
     plusSlides(-1, 'sanFranciscoSlides', 'cursor4')

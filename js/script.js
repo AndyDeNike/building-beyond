@@ -215,6 +215,18 @@ document.getElementById('saratogaTab').onclick = function(){
   document.getElementById('sthumb2').onclick = function(){
     currentSlide(2, 'saratogaSlides', 'cursor6')
   }
+  document.getElementById('sthumb3').onclick = function(){
+    currentSlide(3, 'saratogaSlides', 'cursor6')
+  }
+  document.getElementById('sthumb4').onclick = function(){
+    currentSlide(4, 'saratogaSlides', 'cursor6')
+  }
+  document.getElementById('sthumb5').onclick = function(){
+    currentSlide(5, 'saratogaSlides', 'cursor6')
+  }
+  document.getElementById('sthumb6').onclick = function(){
+    currentSlide(6, 'saratogaSlides', 'cursor6')
+  }
 
   document.getElementById('sPrev').onclick = function(){
     plusSlides(-1, 'saratogaSlides', 'cursor6')

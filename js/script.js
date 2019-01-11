@@ -255,6 +255,15 @@ document.getElementById('woodside2Tab').onclick = function(){
   document.getElementById('ws2thumb3').onclick = function(){
     currentSlide(3, 'woodside2Slides', 'cursor7')
   }
+  document.getElementById('ws2thumb4').onclick = function(){
+    currentSlide(4, 'woodside2Slides', 'cursor7')
+  }
+  document.getElementById('ws2thumb5').onclick = function(){
+    currentSlide(5, 'woodside2Slides', 'cursor7')
+  }
+  document.getElementById('ws2thumb6').onclick = function(){
+    currentSlide(6, 'woodside2Slides', 'cursor7')
+  }
 
   document.getElementById('ws2Prev').onclick = function(){
     plusSlides(-1, 'woodside2Slides', 'cursor7')

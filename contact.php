@@ -30,7 +30,8 @@
 		$mail->Subject = "Contact request from Buildingandbeyond.com";
 		$mail->isHTML(true);
 		$mail->addAddress('denikeandrew@gmail.com');
-		$mail->addAddress('hawkra@aol.com');
+		#$mail->addAddress('ddenike@buildingandbeyond.com');
+		#$mail->addAddress('ehannan@buildingandbeyond.com');
 		$mail->setFrom($email);
 		$mail->Body = 'Name: ' . $name . 
 		"<br><br>" . 'Email: ' . $email . 

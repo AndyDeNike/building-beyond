@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 <head>
 	<meta charset="utf-8">
@@ -12,45 +13,51 @@
 
 	<header>
 		<a href="home.html"><img id="logo" src="images/BB White Logo.jpg"></a>
-		<div id="longlogocontainer">
-			<img id="logolong" src="images/bblonglogo.png">
-		</div>
 		<nav>
 			<ul>
 				<li><a href="home.html">Home</a></li>
 				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li class="current"><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
+		
 	</header>
 
+	<section id="contactInfo">
+		<div class="middleContainer">
+			<div id="contactForm">
+				<h1>Contact Us</h1>
+				<p>Building & Beyond, Inc.<br>
+				   1610 Dell Avenue, Suite M<br>
+				   Campbell, CA 95008<br>
+				   CA License #706491</p>
 
-	<section id="fmContent">
-		<div class="indexRow">
-			<div class="box">
-				<img src="images/PA1/PA1-1.png">
+				<p>Phone: 408.379.4757<br>
+				   Fax: 408.379.4760<br>
+				   Shop: 831.728.8684</p>
 			</div>
-			<div class="box">
-				<img src="images/LGH/LGH-2.png">
+
+
+			<div id="emailform">
+				<h1>Email Us</h1>
+				<form method="POST" action="https://formspree.io/denikeandrew@gmail.com">
+ 	 				<input type="email" name="email" placeholder="Your email">
+  					<textarea name="message" placeholder="Test Message"></textarea>
+  					<button type="submit">Send</button>
+				</form>
+
 			</div>
-			<div class="box">
-				<img src="images/PA2/PA2-1.png">
-			</div>
-			<div class="box">
-				<img src="images/SF/SF-1.png">
-			</div>
-		</div>
+		</div>	
 	</section>
+
 	<div id="spacer">
 	</div>
-	
+
 	<footer>
 		<p>Buildingandbeyond.com, Copyright &copy; CA License #706491</p>
 	</footer>
 
 <script src="js/script.js"></script>
-
-
 
 </body>
 </html>

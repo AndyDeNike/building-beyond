@@ -323,6 +323,15 @@ document.getElementById('menloParkTab').onclick = function(){
   document.getElementById('mpthumb3').onclick = function(){
     currentSlide(3, 'menloParkSlides', 'cursor9')
   }
+  document.getElementById('mpthumb4').onclick = function(){
+    currentSlide(4, 'menloParkSlides', 'cursor9')
+  }
+  document.getElementById('mpthumb5').onclick = function(){
+    currentSlide(5, 'menloParkSlides', 'cursor9')
+  }
+  document.getElementById('mpthumb6').onclick = function(){
+    currentSlide(6, 'menloParkSlides', 'cursor9')
+  }
 
   document.getElementById('mpPrev').onclick = function(){
     plusSlides(-1, 'menloParkSlides', 'cursor9')

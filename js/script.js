@@ -357,6 +357,15 @@ document.getElementById('woodside3Tab').onclick = function(){
   document.getElementById('ws3thumb2').onclick = function(){
     currentSlide(2, 'woodside3Slides', 'cursor10')
   }
+  document.getElementById('ws3thumb3').onclick = function(){
+    currentSlide(3, 'woodside3Slides', 'cursor10')
+  }
+  document.getElementById('ws3thumb4').onclick = function(){
+    currentSlide(4, 'woodside3Slides', 'cursor10')
+  }
+  document.getElementById('ws3thumb5').onclick = function(){
+    currentSlide(5, 'woodside3Slides', 'cursor10')
+  }
 
   document.getElementById('ws3Prev').onclick = function(){
     plusSlides(-1, 'woodside3Slides', 'cursor10')

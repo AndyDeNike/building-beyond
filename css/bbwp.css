@@ -1,3 +1,25 @@
+@font-face{
+	font-family: average;
+	src: url('average-regular.ttf');	
+}
+
+@font-face{
+	font-family: indira;
+	src: url('indira_k.ttf');	
+}
+
+p, input, label, footer{
+	font-family: average;
+}
+
+h1, h3, button{
+	font-family: indira;
+}
+
+button{
+	font-size: 12px;
+}
+
 .middleContainer{
 	width: 100%;
 	margin: auto;

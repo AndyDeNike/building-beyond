@@ -8,15 +8,12 @@
 	src: url('indira_k.ttf');	
 }
 
-p, input, label, footer{
+h1, h3, p, input, label{
 	font-family: average;
 }
 
-h1, h3, button{
-	font-family: indira;
-}
-
 button{
+	font-family: indira;
 	font-size: 12px;
 }
 

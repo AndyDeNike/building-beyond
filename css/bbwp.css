@@ -12,9 +12,14 @@ h1, h3, p, input, label{
 	font-family: average;
 }
 
+/*footer p{
+	font-family: Arial, Helvetica, sans-serif;
+}*/
+
+
 button{
 	font-family: indira;
-	font-size: 12px;
+	font-size: 13px;
 }
 
 .middleContainer{
@@ -23,8 +28,12 @@ button{
 	overflow: hidden;
 }
 
-body{
+/*nav ul a{
 	font: 15px/1.5 Arial, Helvetica, sans-serif;
+}*/
+
+body{
+	font: 16px/1.5 Arial, Helvetica, sans-serif;
 	padding: 0;
 	margin: 0;
 	display: flex;
@@ -57,6 +66,19 @@ header a{
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 16px;
+}
+
+a {  
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+
+a:hover { 
+	color: #228B22; /*ForestGreen */
 }
 
 
@@ -106,7 +128,7 @@ header nav ul li{
  /* Style the tab */
 
  #galleryPortfolio {
- 	width: 45%; /*potentially 50*/
+ 	width: 50%; /*potentially 40*/
  	margin: auto;
  	overflow: hidden;
  }
@@ -129,6 +151,12 @@ header nav ul li{
     outline: none;
     text-align: left;
     cursor: pointer;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    /* ...and now for the proper property */
+    transition:.3s;
 }
 
 /* Change background color of buttons on hover */
@@ -292,10 +320,9 @@ footer {
 		font-size: 13px;
 	}
 	.box{
-	width: 24%;
+	width: 23%;
 	}
 	#fmContent .box img{
-	/*width: 90%;*/
 	width: 100%;
 	}
 }

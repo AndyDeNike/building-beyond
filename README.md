@@ -1,2 +1,2 @@
 # building-beyond
-View in browser:  buildingandbeyond.com
+View in browser:  https://www.buildingandbeyond.com/

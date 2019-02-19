@@ -187,7 +187,7 @@ document.getElementById('woodsideTab').onclick = function(){
   document.getElementById('wsthumb5').onclick = function(){
     currentSlide(5, 'woodsideSlides', 'cursor5')
   }
-  document.getElementById('wsthumb5').onclick = function(){
+  document.getElementById('wsthumb6').onclick = function(){
     currentSlide(6, 'woodsideSlides', 'cursor5')
   }
 

@@ -30,7 +30,7 @@
 		$mail->Host = 'smtp.gmail.com';
 		$mail->SMTPAuth = true;
 		$mail->Username = 'denikeandrew@gmail.com';
-		$mail->Password = '****************';
+		$mail->Password = '****************';;
 		$mail->SMTPSecure = 'tls'; 
 		$mail->Port = 587;
 
@@ -51,7 +51,7 @@
 			$msg = "Your email has been sent, thank you!";
 
 		else 
-			$msg = "Please try again!";
+			$msg = "Please enter all contact fields below and try again!";
 
 	}
 ?>
@@ -82,11 +82,10 @@
 		
 	</header>
 
-	<?php if ($msg != "") echo "$msg<br><br>"; ?>
-
 	<section id="contactInfo">
 		<!-- <div class="middleContainer"> -->
 			<div id="contactForm">
+                <?php if ($msg != "") echo "<div style='color:#25673F;'>". "$msg<br><br>" ."</div>"; ?>
 				<h1>Contact Us</h1>
 				<p>Building & Beyond, Inc.<br>
 				   1610 Dell Avenue, Suite M<br>
@@ -123,6 +122,8 @@
 					<input type="submit" name="submit" value="Submit">
 					<!--<button class="button_1" type="submit">Send</button> -->
 				</form>
+
+
 
 			</div>
 		<!-- </div>	 -->

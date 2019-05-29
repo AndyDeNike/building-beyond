@@ -10,8 +10,15 @@
 
 
 	if (isset($_POST['submit'])) {
+        
+        $honeypot = trim($_POST["email"]);
+        
+        if(!empty($honeypot)) {
+            exit;
+        }
+        
 		$name = $_POST['name'];
-		$email = $_POST['email'];
+		$email = $_POST['email_real'];
 		$phone = $_POST['phone'];
 		$message = $_POST['message'];
 
@@ -23,15 +30,17 @@
 		$mail->Host = 'smtp.gmail.com';
 		$mail->SMTPAuth = true;
 		$mail->Username = 'denikeandrew@gmail.com';
-		$mail->Password = 'ttxsbcjqssfjfeos';
+		$mail->Password = '****************';
 		$mail->SMTPSecure = 'tls'; 
 		$mail->Port = 587;
 
 		$mail->Subject = "Contact request from Buildingandbeyond.com";
 		$mail->isHTML(true);
 		$mail->addAddress('denikeandrew@gmail.com');
-		#$mail->addAddress('ddenike@buildingandbeyond.com');
-		#$mail->addAddress('ehannan@buildingandbeyond.com');
+		$mail->addAddress('ddenike@buildingandbeyond.com');
+		// $mail->addAddress('bbruce@buildingandbeyond.com');
+		$mail->addAddress('ehannan@buildingandbeyond.com');
+	
 		$mail->setFrom($email);
 		$mail->Body = 'Name: ' . $name . 
 		"<br><br>" . 'Email: ' . $email . 
@@ -62,12 +71,12 @@
 <body>
 
 	<header>
-		<a href="home.html"><img id="logo" src="images/BB White Logo.jpg"></a>
+		<a href="home"><img id="logo" src="images/BB White Logo.jpg"></a>
 		<nav>
 			<ul>
-				<li><a href="home.html">Home</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li class="current"><a href="contact.php">Contact</a></li>
+				<li><a href="home">Home</a></li>
+				<li><a href="portfolio">Portfolio</a></li>
+				<li class="current"><a href="contact">Contact</a></li>
 			</ul>
 		</nav>
 		
@@ -76,7 +85,7 @@
 	<?php if ($msg != "") echo "$msg<br><br>"; ?>
 
 	<section id="contactInfo">
-		<div class="middleContainer">
+		<!-- <div class="middleContainer"> -->
 			<div id="contactForm">
 				<h1>Contact Us</h1>
 				<p>Building & Beyond, Inc.<br>
@@ -85,8 +94,7 @@
 				   CA License #706491</p>
 
 				<p>Phone: 408.379.4757<br>
-				   Fax: 408.379.4760<br>
-				   Shop: 831.728.8684</p>
+				   Fax: 408.379.4760</p>
 			</div>
 
 
@@ -97,9 +105,12 @@
 						<label>Name</label><br>
 						<input name="name" type="text" placeholder="Name">
 						</div>
+                    <div>
+                        <input name = "email" type="text" style="display: none;">
+                    </div>
 					<div>
 						<label>Email</label><br>
-						<input name = "email" type="email" placeholder="Email Address">
+						<input name = "email_real" type="email" placeholder="Email Address">
 					</div>
 					<div>
 						<label>Phone</label><br>
@@ -114,7 +125,7 @@
 				</form>
 
 			</div>
-		</div>	
+		<!-- </div>	 -->
 	</section>
 
 	<div id="spacer">

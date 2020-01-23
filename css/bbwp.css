@@ -52,6 +52,49 @@ header #logo{
     
 }
 
+#cf4a img {
+    animation-name: cf4FadeInOut;
+    animation-timing-function: ease-in-out;
+/* if you only want to cycle a finite amount of times, 
+   simply change 'infinite' with # of iterations you need */
+    animation-iteration-count: infinite; 
+    animation-duration: 20s;
+    /* animation-direction: alternate; not strictly necessary */
+    position:absolute;
+}
+  
+#cf4a img:nth-of-type(1) {
+	animation-delay: 15s;
+}
+#cf4a img:nth-of-type(2) {
+	animation-delay: 10s;
+}
+#cf4a img:nth-of-type(3) {
+	animation-delay: 5s;
+}
+#cf4a img:nth-of-type(4) {
+	animation-delay: 0;
+}
+
+
+@keyframes cf4FadeInOut {
+	0% {
+		opacity:1;
+	}
+		17% {
+		opacity:1;
+	}
+	25% {
+		opacity:0;
+	}
+	92% {
+		opacity:0;
+	}
+	100% {
+		opacity:1;
+	}
+	}
+
 #profileInfo #homefront{
 	width: 100%;
     height: auto;
@@ -295,7 +338,7 @@ footer {
 
 .indexRow{
 	margin-top: 20px;	
-	margin-bottom: 134px;
+	margin-bottom: 220px;
 	padding-top: 15px;
 }
 
@@ -303,6 +346,7 @@ footer {
 	width: 20%;
 	display: inline-block;
 	vertical-align: middle;
+	position: relative;
 }
 
 #fmContent{
@@ -312,6 +356,11 @@ footer {
 #fmContent .box img{
 	/*width: 90%;*/
 	width: 93%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+
 }
 
 @media(max-width: 768px){
@@ -334,6 +383,18 @@ footer {
 		width: 23%;
 	}
 	#fmContent .box img{
+		/* width: 98%; */
 		width: 100%;
+	}
+	/* #fmContent .botPic img{
+		margin-top: 96px;
+	}
+	.indexRow {
+		margin-bottom: 245px;
+	}*/
+	header nav ul li{
+		display: inline-block;
+		padding: 0 21px 0 21px;
+		
 	}
 }

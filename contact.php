@@ -30,7 +30,7 @@
 		$mail->Host = 'smtp.gmail.com';
 		$mail->SMTPAuth = true;
 		$mail->Username = 'denikeandrew@gmail.com';
-		$mail->Password = '****************';;
+		$mail->Password = 'yeawenkmvvqblblq';
 		$mail->SMTPSecure = 'tls'; 
 		$mail->Port = 587;
 
@@ -71,10 +71,10 @@
 <body>
 
 	<header>
-		<a href="home"><img id="logo" src="images/BB White Logo.jpg"></a>
+		<a href="index"><img id="logo" src="images/BB White Logo.jpg"></a>
 		<nav>
 			<ul>
-				<li><a href="home">Home</a></li>
+				<li><a href="home">About</a></li>
 				<li><a href="portfolio">Portfolio</a></li>
 				<li class="current"><a href="contact">Contact</a></li>
 			</ul>

@@ -1,0 +1,149 @@
+.galleryPortfolio {
+  width: 50%; /*potentially 40*/
+  margin: auto;
+  overflow: hidden;
+
+  /* Style the tab */
+  .tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+  }
+
+  /* Style the tab content */
+  .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #25673f;
+    /* #25673f */
+    width: 70%;
+    border-left: none;
+    height: 100%;
+  }
+
+  /* Style the buttons that are used to open the tab content */
+  button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    -o-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -webkit-transition: 0.25s;
+    /* ...and now for the proper property */
+    transition: 0.25s;
+
+    /* Change background color of buttons on hover */
+    &:hover {
+      background-color: #c2e0ce;
+    }
+
+    /* Create an active/current "tab button" class */
+    &.active {
+      background-color: #c2e0ce;
+    }
+  }
+
+  /* Image Galleries, next and previous buttons, the caption text and the dots:*/
+
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Position the image container (needed to position the left and right arrows) */
+  .galleryContainer {
+    position: relative;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+    /*-webkit-backface-visibility: hidden;*/
+  }
+
+  .active,
+  .demo:hover {
+    /*-o-transition:.15s;
+        -ms-transition:.15s;
+        -moz-transition:.15s;
+        -webkit-transition:.15s;
+      
+        transition:.15s;*/
+    opacity: 1;
+  }
+}

@@ -1,0 +1,58 @@
+@import "index";
+@import "header";
+@import "about";
+@import "portfolio";
+@import "contact";
+
+@font-face {
+  font-family: average;
+  src: url("average-regular.ttf");
+}
+
+@font-face {
+  font-family: indira;
+  src: url("indira_k.ttf");
+}
+
+h1,
+h3,
+p,
+input,
+label {
+  font-family: average;
+}
+
+button {
+  font-family: indira;
+  font-size: 13px;
+}
+
+.middleContainer {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+body {
+  font: 16px/1.5 Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*used to create flex space between content and footer*/
+.spacer {
+  flex: 1;
+}
+
+footer {
+  padding: 1px;
+  margin-top: 50px;
+  color: white;
+  background-color: #25673f;
+  text-align: center;
+}
+
+@import "mobile";
